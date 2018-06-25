@@ -35,6 +35,14 @@ module.exports = {
                     name: '[name].[hash:8].[ext]'
                 }
             },
+            {
+                test: /\.svg$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 10000000,
+                    name: '[name].[hash:8].[ext]'
+                }
+            }            
         ]
     },
     plugins: [

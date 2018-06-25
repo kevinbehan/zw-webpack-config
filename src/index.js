@@ -2,8 +2,9 @@
 import './index.scss'
 import './button.scss'
 //Test file loading for images
-import './imgs/bread-cat.jpg'
+import breadCat from './imgs/bread-cat.jpg'
 
+console.log("Here's a link to an image of a breadcat:", breadCat)
 console.log('Hello friends at Zillow! This is my little test file for my build process.')
 
 //Using code below to make sure ES6 features are transpiled to ES5
