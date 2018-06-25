@@ -1,4 +1,4 @@
-#FRONTEND CODING INTERVIEW QUESTION 1
+# FRONTEND CODING INTERVIEW QUESTION 1
 
 This repository will address the following project requirements:
 
