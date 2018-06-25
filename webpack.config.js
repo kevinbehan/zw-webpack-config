@@ -7,5 +7,17 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './build'),
         filename: 'bundle.[chunkhash:8].js'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+                options: {
+                    presets: ['env']
+                }
+            }
+        ]
     }
 }
+
