@@ -1,5 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+
 
 module.exports = {
     entry: './src/index.js',
@@ -18,6 +20,12 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new CleanWebpackPlugin(
+            ['build/**/*.*'],
+            { root: path.resolve('.') }
+        )        
+    ]
 }
 
