@@ -1,5 +1,6 @@
 //Test styles to make sure multiple .scss files are concatenated into one .css file
 import './index.scss'
+import './button.scss'
 
 console.log('Hello friends at Zillow! This is my little test file for my build process.')
 
